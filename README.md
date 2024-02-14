@@ -3,7 +3,14 @@
 > In this project .Net 8 used.
 
 ## Introduction
-
+- [X] [Summary](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#summary)
+- [X] Need To Install
+- [X] Preparetion
+- [X] Creating Project
+- [X] First Look
+- [X] Create Models & Context
+  - [X] Models
+  - [X] Context
 ## Summary
 This project is developed for learning .Net and backend with Entity Framework. Used "Code First" approch here.<br />
 Project basicly creating a Postgresql database and tables, after that using basic CRUD (Get, Post, Put, Delete) operations.<br />
