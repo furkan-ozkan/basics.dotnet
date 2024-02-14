@@ -46,10 +46,15 @@ When you create your project it comes with a sample. lets clear it. <br /> <br /
      In this project we will use 2 model. Under 'Models' folder lets create ```Anime.cs``` and ```User.cs```.<br /><br />
 2.   Now lets create a folder named as ```Data```.<br />
      Under 'Data' folder we need to create an another cs file. I named it like ```ApplicationDBContext.cs```
+### Models
+* For models we not need any spesific things, we will create our models just like a database table.<br />
+Only important thing is we need an id for primary key.
 ### Context
-First of all we need to extends ```DbContext``` in our ApplicationDBContext.cs like this.
-![]()
-now lets create our constructor and as a parameter we will ask ```DbContextOptions``` in our constructor and after that lets send this context option to our constructor base.
-![]()
-and last of all we need to create our DbSets. With Entity Framework we will use this DbSets like our database tables.
-![]()
+* First of all we need to extends ```DbContext``` in our ApplicationDBContext.cs like this.<br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/extends.png)<br />
+* Now lets create our constructor and as a parameter we will ask ```DbContextOptions``` in our constructor and after that lets send this context option to our constructor base.<br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/constructor.png)<br />
+* Last of all we need to create our DbSets. With Entity Framework we will use this DbSets like our database tables.<br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/dbsets.png)<br />
+* Finally it looks like this.<br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/applicationdbcontext.png)<br />
