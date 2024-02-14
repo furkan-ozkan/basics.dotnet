@@ -5,12 +5,24 @@
 ## Introduction
 
 ## Summary
-This project is developed for learning .Net and backend with .Net Core. Used "Code First" approch here.<br />
+This project is developed for learning .Net and backend with Entity Framework. Used "Code First" approch here.<br />
 Project basicly creating a Postgresql database and tables, after that using basic CRUD (Get, Post, Put, Delete) operations.<br />
 It is developed with Visual Studio Code.
 
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/crud.png)
 
+## Need To Install
+* C#
+* C# Dev Kit
+* .Net Extension Pack
+* .Net Install Tool
+* Nuget Gallery
+* C# Extension by JosKreativ
+
+## Preparetion
+Search ``` >NuGet ``` in VSCode and open NuGet Gallery. <br />
+In this gallery searh for your sql database like this. <br />
+![]()
 
 ## Creating Project
 1.  Open VSCode in a folder.
@@ -22,4 +34,6 @@ It is developed with Visual Studio Code.
     * ```dotnet watch run```
 
 ## First Look
-When you create your project it comes with a sample. lets clear it.
+When you create your project it comes with a sample. lets clear it. <br /> <br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/programcs.png)
+
