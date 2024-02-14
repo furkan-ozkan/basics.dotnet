@@ -21,9 +21,13 @@ It is developed with Visual Studio Code.
 
 ## Preparetion
 Search ``` >NuGet ``` in VSCode and open NuGet Gallery. <br />
-In this gallery searh for your sql database like this. <br />
-![]()
+In this gallery searh for your sql database like this and install it. <br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/nuget.png) <br />
+after that search and install 
+* Microsoft.EntityFrameworkCore.Design
+* Microsoft.EntityFrameworkCore.Tools
 
+  
 ## Creating Project
 1.  Open VSCode in a folder.
 2.  Open Terminal
@@ -35,5 +39,17 @@ In this gallery searh for your sql database like this. <br />
 
 ## First Look
 When you create your project it comes with a sample. lets clear it. <br /> <br />
-![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/programcs.png)
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/programcs.png) <br /><br />
 
+## Create Models & Context
+1.   Now lets create a folder named as ```Models```.<br />
+     In this project we will use 2 model. Under 'Models' folder lets create ```Anime.cs``` and ```User.cs```.<br /><br />
+2.   Now lets create a folder named as ```Data```.<br />
+     Under 'Data' folder we need to create an another cs file. I named it like ```ApplicationDBContext.cs```
+### Context
+First of all we need to extends ```DbContext``` in our ApplicationDBContext.cs like this.
+![]()
+now lets create our constructor and as a parameter we will ask ```DbContextOptions``` in our constructor and after that lets send this context option to our constructor base.
+![]()
+and last of all we need to create our DbSets. With Entity Framework we will use this DbSets like our database tables.
+![]()
