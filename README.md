@@ -9,6 +9,9 @@ This project is developed for learning .Net and backend with .Net Core. Used "Co
 Project basicly creating a Postgresql database and tables, after that using basic CRUD (Get, Post, Put, Delete) operations.<br />
 It is developed with Visual Studio Code.
 
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/crud.png)
+
+
 ## Creating Project
 1.  Open VSCode in a folder.
 2.  Open Terminal
@@ -17,3 +20,6 @@ It is developed with Visual Studio Code.
     * ```-o api``` for creating a sub folder named as api
 4.  Run and test project
     * ```dotnet watch run```
+
+## First Look
+When you create your project it comes with a sample. lets clear it.
