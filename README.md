@@ -4,13 +4,13 @@
 
 ## Introduction
 - [X] [Summary](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#summary)
-- [X] Need To Install
-- [X] Preparetion
-- [X] Creating Project
-- [X] First Look
-- [X] Create Models & Context
-  - [X] Models
-  - [X] Context
+- [X] [Need To Install](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#need-to-install)
+- [X] [Preparetion](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#preparetion)
+- [X] [Creating Project](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#creating-project)
+- [X] [First Look](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#first-look)
+- [X] [Create Models & Context](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#create-models--context)
+  - [X] [Models](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#models)
+  - [X] [Context](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#context)
 ## Summary
 This project is developed for learning .Net and backend with Entity Framework. Used "Code First" approch here.<br />
 Project basicly creating a Postgresql database and tables, after that using basic CRUD (Get, Post, Put, Delete) operations.<br />
