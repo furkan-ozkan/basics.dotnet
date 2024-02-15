@@ -165,5 +165,5 @@ Now we will write our http request functions. Lets get in our controller.
 * We will use ```Find``` func. not ```ToList``` in here and we need to send id in ```Find(id)``` func.
 * Lets check is it null? if it is null we will return ```NotFound()```
 * if its not we will use same ```Ok(user.ToUserDto())``` func. <br />
-  ![](https://github.com/furkan-ozkan/basics.dotnet/blob/main/ReadmeImages/getbyid.png)
+  ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/getbyid.png)
 <br />
