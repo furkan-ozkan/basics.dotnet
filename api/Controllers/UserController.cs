@@ -1,3 +1,6 @@
+using api.Data;
+using Microsoft.AspNetCore.Mvc;
+
 namespace api.Controllers
 {
     [Route("api/user")]
@@ -17,7 +20,7 @@ namespace api.Controllers
             var users = _context.Users.ToList();
             return Ok(users);
         }
-        
+
         [HttpGet("{id}")]
         public IActionResult GetById([FromRoute] int id)
         {

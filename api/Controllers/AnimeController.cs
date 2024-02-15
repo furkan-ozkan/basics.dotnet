@@ -1,3 +1,6 @@
+using api.Data;
+using Microsoft.AspNetCore.Mvc;
+
 namespace api.Controllers
 {
     [Route("api/anime")]
