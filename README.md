@@ -117,5 +117,7 @@ Now lets check our database and if we saw our tables that means everything going
   * In constructor set your parameter in your readonly variable.
   * After that create a route for your controller, write this on your class.
     * ```[Route("api/anime")]```
-    * ```[ApiController]```
-  ![]() <br />
+    * ```[ApiController]``` <br />
+    ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/controllerconstructor.png)
+
+<br />
