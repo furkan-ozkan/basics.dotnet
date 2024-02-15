@@ -11,6 +11,8 @@
 - [X] [Create Models & Context](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#create-models--context)
   - [X] [Models](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#models)
   - [X] [Context](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#context)
+- [X] [Database Connection](https://github.com/furkan-ozkan/basics.dotnet/tree/main#database-connection)
+- [X] [Migrations](https://github.com/furkan-ozkan/basics.dotnet/tree/main#migration)
 ## Summary
 This project is developed for learning .Net and backend with Entity Framework. Used "Code First" approch here.<br />
 Project basicly creating a Postgresql database and tables, after that using basic CRUD (Get, Post, Put, Delete) operations.<br />
@@ -76,6 +78,8 @@ After you find it we need to add our connection string in appsettings.<br />
     "DefaultConnection": "User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=dotnetbasicsdb;"
   }
 ```
+<br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/appsettings.png)<br />
 I named it as ```DefaultConnection``` but its not important you can named it whatever you want. <br />
 Now lets use this connection string, for using it we will work on ```program.cs```. <br />
 ```
@@ -89,8 +93,9 @@ we need to add this in ```program.cs``` for using our connetion string in our ``
 
 ## Migration
 Next step is creating migrations. Open terminal and type ```dotnet ef migrations add init```. <br />
-If everything is works correctly we will see our "Migrations" folder in project like this.<br />
-
-Now we need to use this migration scripts to create our tables in database. Open terminal.<br />
-``` dotnet ef database update```
-Now lets check our database and if we saw our tables that means everything going right.<br />
+If everything is works correctly we will see our "Migrations" folder in project like this.<br /><br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/migrationsfolder.png)<br />
+Now we need to use this migration scripts to create our tables in database. Open terminal and write.<br />
+```dotnet ef database update``` <br />
+Now lets check our database and if we saw our tables that means everything going right.<br /><br />
+![](https://github.com/furkan-ozkan/basics.dotnet/blob/main/ReadmeImages/pgadmintables.png)<br />
