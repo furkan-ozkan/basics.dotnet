@@ -17,7 +17,9 @@ namespace api.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var users = _context.Users.ToList();
+            var users = _context.Users.ToList()
+            .Select(s => s.ToUserDto());
+
             return Ok(users);
         }
 
@@ -27,7 +29,7 @@ namespace api.Controllers
             var user = _context.Users.Find(id);
             if (user == null)
                 return NotFound();
-            return Ok(user);
+            return Ok(user.ToUserDto());
         }
     }
 }

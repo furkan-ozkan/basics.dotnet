@@ -16,7 +16,9 @@ namespace api.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var animes = _context.Animes.ToList();
+            var animes = _context.Animes.ToList()
+            .Select(s => s.ToAnimeDto());
+
             return Ok(animes);
         }
 
@@ -26,7 +28,7 @@ namespace api.Controllers
             var anime = _context.Animes.Find(id);
             if (anime == null)
                 return NotFound();
-            return Ok(anime);
+            return Ok(anime.ToAnimeDto());
         }
     }
 }
