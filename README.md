@@ -109,17 +109,20 @@ Now lets check our database and if we saw our tables that means everything going
   ```UserRequestDto.cs```<br />
   ```CreateUserRequestDto.cs```<br />
   ```UpdateUserRequestDto.cs```<br />
+  ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/dtos.png)
+  <br />
 > [!NOTE]
 > Inside of Dto files is optional so you can create however you want. <br />
-> We will use ```UserRequestDto.cs``` for HttpGet so what do you need for this request you can create like it.
-In this project i create them like this.
-![]()
+
+In this project i create them like this. <br />
+  ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/userdtos.png)
 <br />
 
 ## Mappers
 * Create a folder named as ```Mappers```
-* We will use it later too. <br />
+* Basicly we need mappers for transform between models and Dtos. <br />
 ![]()
+<br />
 
 ## Controller
 ### Creating Controller
