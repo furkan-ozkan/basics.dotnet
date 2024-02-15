@@ -121,7 +121,7 @@ In this project i create them like this. <br />
 ## Mappers
 * Create a folder named as ```Mappers```
 * Basicly we need mappers for transform between models and Dtos. <br />
-![]()
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/mappers.png)
 <br />
 
 ## Controller
@@ -153,6 +153,7 @@ Now we will write our http request functions. Lets get in our controller.
 * After our attribute we will create function with ```IActionResult``` return.
 * Name the function like ```GetAll```
 * In this func. we need a var and this var will get all list with ```ToList()``` fuc.
+* But we should use mapper to convert data to dto. Put ```.Select(x => x.ToUserDto())``` end of the ToList func.
 * Last of all we need a ```Ok()``` return with our variable. <br />
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/getall.png)
 <br />
@@ -163,6 +164,6 @@ Now we will write our http request functions. Lets get in our controller.
 * Lets add a id parameter to our function. ```GetById([FromRoute] int id)```
 * We will use ```Find``` func. not ```ToList``` in here and we need to send id in ```Find(id)``` func.
 * Lets check is it null? if it is null we will return ```NotFound()```
-* if its not we will use same ```Ok``` func. <br />
+* if its not we will use same ```Ok(user.ToUserDto())``` func. <br />
   ![](https://github.com/furkan-ozkan/basics.dotnet/blob/main/ReadmeImages/getbyid.png)
 <br />
