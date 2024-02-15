@@ -79,7 +79,9 @@ After you find it we need to add our connection string in appsettings.<br />
   }
 ```
 <br />
+
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/appsettings.png)<br />
+
 I named it as ```DefaultConnection``` but its not important you can named it whatever you want. <br />
 Now lets use this connection string, for using it we will work on ```program.cs```. <br />
 ```
