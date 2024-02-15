@@ -65,3 +65,32 @@ Only important thing is we need an id for primary key.
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/dbsets.png)<br />
 * Finally it looks like this.<br />
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/applicationdbcontext.png)<br />
+
+## Database Connection
+First of all we need to create a database, i created it named as ```dotnetbasicsdb```.
+Now we will update our appsettings.json file, we need to add a db connection string in here. <br />
+[You can find your connection string in here.](https://www.connectionstrings.com/) <br />
+After you find it we need to add our connection string in appsettings.<br />
+```
+  "ConnectionStrings": {
+    "DefaultConnection": "User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=dotnetbasicsdb;"
+  }
+```
+I named it as ```DefaultConnection``` but its not important you can named it whatever you want. <br />
+Now lets use this connection string, for using it we will work on ```program.cs```. <br />
+```
+builder.Services.AddDbContext<ApplicationDBContext>( options =>
+    {
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    }
+);
+```
+we need to add this in ```program.cs``` for using our connetion string in our ```ApplicationDBContext.cs```.
+
+## Migration
+Next step is creating migrations. Open terminal and type ```dotnet ef migrations add init```. <br />
+If everything is works correctly we will see our "Migrations" folder in project like this.<br />
+
+Now we need to use this migration scripts to create our tables in database. Open terminal.<br />
+``` dotnet ef database update```
+Now lets check our database and if we saw our tables that means everything going right.<br />
