@@ -102,6 +102,25 @@ Now we need to use this migration scripts to create our tables in database. Open
 Now lets check our database and if we saw our tables that means everything going right.<br /><br />
 ![](https://github.com/furkan-ozkan/basics.dotnet/blob/main/ReadmeImages/pgadmintables.png)<br />
 
+## Data Transfer Objects (Dtos)
+* Create a folder named as ```Dtos```
+* Create subfolders named as your models.
+* We will create 3 Dto file for each model. <br />
+  ```UserRequestDto.cs```<br />
+  ```CreateUserRequestDto.cs```<br />
+  ```UpdateUserRequestDto.cs```<br />
+> [!NOTE]
+> Inside of Dto files is optional so you can create however you want. <br />
+> We will use ```UserRequestDto.cs``` for HttpGet so what do you need for this request you can create like it.
+In this project i create them like this.
+![]()
+<br />
+
+## Mappers
+* Create a folder named as ```Mappers```
+* We will use it later too. <br />
+![]()
+
 ## Controller
 ### Creating Controller
 * First of all create a folder named as ```Controllers```
@@ -120,4 +139,27 @@ Now lets check our database and if we saw our tables that means everything going
     * ```[ApiController]``` <br />
     ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/controllerconstructor.png)
 
+<br />
+
+
+### HTTP Requests
+Now we will write our http request functions. Lets get in our controller.
+#### [HTTPGet]
+##### GetAll
+* First of all we need an attribute. ```[HttpGet]```
+* After our attribute we will create function with ```IActionResult``` return.
+* Name the function like ```GetAll```
+* In this func. we need a var and this var will get all list with ```ToList()``` fuc.
+* Last of all we need a ```Ok()``` return with our variable. <br />
+![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/getall.png)
+<br />
+
+##### GetById
+* For a single get return we need some update to ```GetAll``` function.
+* Lets update our ```HttpGet``` like this. ```[HttpGet("{id}")]```
+* Lets add a id parameter to our function. ```GetById([FromRoute] int id)```
+* We will use ```Find``` func. not ```ToList``` in here and we need to send id in ```Find(id)``` func.
+* Lets check is it null? if it is null we will return ```NotFound()```
+* if its not we will use same ```Ok``` func. <br />
+  ![](https://github.com/furkan-ozkan/basics.dotnet/blob/main/ReadmeImages/getbyid.png)
 <br />
