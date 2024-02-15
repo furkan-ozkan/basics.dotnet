@@ -6,6 +6,5 @@ namespace api.Models
         public string userName { get; set; }
         public string password { get; set; }
         public List<Anime> watchedList { get; set; } = new List<Anime>();
-        public List<Anime> toWatchList { get; set; } = new List<Anime>();
     }
 }
