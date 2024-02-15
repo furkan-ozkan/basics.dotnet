@@ -101,3 +101,21 @@ Now we need to use this migration scripts to create our tables in database. Open
 ```dotnet ef database update``` <br />
 Now lets check our database and if we saw our tables that means everything going right.<br /><br />
 ![](https://github.com/furkan-ozkan/basics.dotnet/blob/main/ReadmeImages/pgadmintables.png)<br />
+
+## Controller
+### Creating Controller
+* First of all create a folder named as ```Controllers```
+> [!IMPORTANT]
+> Do this steps for all of your controllers.
+* In this folder create controllers for your models like ```UserController.cs```
+* Open ```program.cs``` and add this to thing in it to activate our controllers.
+  * ```builder.Services.AddControllers();```
+  * ```app.MapControllers();```
+* Now lets get ready to our controllers. Open your controllers.
+  * Create readonly variable for your DB context.
+  * Create a constructor, as parameters ask DB context.
+  * In constructor set your parameter in your readonly variable.
+  * After that create a route for your controller, write this on your class.
+    * ```[Route("api/anime")]```
+    * ```[ApiController]```
+  ![]() <br />
