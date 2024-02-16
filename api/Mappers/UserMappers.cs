@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using api.Dtos.User;
+using api.Models;
 
 namespace api.Mappers
 {
-    public class UserMappers
+    public static class UserMappers
     {
         public static UserRequestDto ToUserRequestDto(this User userModel)
         {
@@ -25,8 +23,8 @@ namespace api.Mappers
         }
         public static User UpdateToUserFromUserDTO(this UpdateUserRequestDto updateUserDto, User user)
         {
-            user.userName = updateUserDto.userName,
-            user.password = updateUserDto.password
+            user.userName = updateUserDto.userName;
+            user.password = updateUserDto.password;
 
             return user;
         }

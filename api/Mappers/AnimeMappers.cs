@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using api.Dtos.Anime;
+using api.Models;
 
 namespace api.Mappers
 {
-    public class AnimeMappers
+    public static class AnimeMappers
     {
         public static AnimeRequestDto ToAnimeRequestDto(this Anime animeModel)
         {
@@ -26,8 +24,8 @@ namespace api.Mappers
         }
         public static Anime UpdateToAnimeFromAnimeDTO(this UpdateAnimeRequestDto updateAnimeDto, Anime anime)
         {
-            anime.name = updateAnimeDto.name,
-            anime.status = updateAnimeDto.status
+            anime.name = updateAnimeDto.name;
+            anime.status = updateAnimeDto.status;
 
             return anime;
         }
