@@ -124,6 +124,10 @@ In this project i create them like this. <br />
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/mappers.png)
 <br />
 
+> [!CAUTION]
+> This image has syntax error in update func. You should use ```;```.
+<br />
+
 ## Controller
 ### Creating Controller
 * First of all create a folder named as ```Controllers```
@@ -153,7 +157,7 @@ Now we will write our http request functions. Lets get in our controller.
 * After our attribute we will create function with ```IActionResult``` return.
 * Name the function like ```GetAll```
 * In this func. we need a var and this var will get all list with ```ToList()``` fuc.
-* But we should use mapper to convert data to dto. Put ```.Select(x => x.ToUserDto())``` end of the ToList func.
+* But we should use mapper to convert data to dto. Put ```.Select(x => x.ToUserRequestDto())``` end of the ToList func.
 * Last of all we need a ```Ok()``` return with our variable. <br />
 ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/getall.png)
 <br />
@@ -164,6 +168,33 @@ Now we will write our http request functions. Lets get in our controller.
 * Lets add a id parameter to our function. ```GetById([FromRoute] int id)```
 * We will use ```Find``` func. not ```ToList``` in here and we need to send id in ```Find(id)``` func.
 * Lets check is it null? if it is null we will return ```NotFound()```
-* if its not we will use same ```Ok(user.ToUserDto())``` func. <br />
+* if its not we will use same ```Ok(user.ToUserRequestDto())``` func. <br />
   ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/getbyid.png)
+<br />
+
+#### [HTTPPost]
+##### Create
+* Create a function with ```HttpPost``` attribute and ```[FromBody]``` parameters.
+* As a parameter ask ```CreateUserRequestDto``` or how did you named it.
+* Return type is ```IActionResult```.
+* Use ```ToUserFromCreateDTO();``` and create a user.
+* with context add it in to list and save.
+* Finally find it and return. <br />
+  ![]()
+<br />
+
+#### [HTTPPut]
+##### Update
+* So similar. Use ```HttpPut``` and add ```[Route("{id}")]``` as an extra attribute.
+* Parameters will be ```[FromRoute] int id``` and ```[FromBody] UpdateUserRequestDto userDto```
+* in func. use ```Find``` and find user at that id.
+* Use update mapper, save changes and retur. <br />
+  ![]()
+<br />
+
+#### [HTTPDelete]
+##### Delete
+* attributes ```[HttpDelete]``` ,```[HttpRoute]```
+* Find user from route and remove it users list under context <br />
+  ![]()
 <br />
