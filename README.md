@@ -13,6 +13,20 @@
   - [X] [Context](https://github.com/furkan-ozkan/basics.dotnet/tree/main?tab=readme-ov-file#context)
 - [X] [Database Connection](https://github.com/furkan-ozkan/basics.dotnet/tree/main#database-connection)
 - [X] [Migrations](https://github.com/furkan-ozkan/basics.dotnet/tree/main#migration)
+- [X] [Data Transfer Objects](https://github.com/furkan-ozkan/basics.dotnet/tree/main#data-transfer-objects-dtos)
+- [X] [Mappers](https://github.com/furkan-ozkan/basics.dotnet/tree/main#mappers)
+- [X] [Controllers](https://github.com/furkan-ozkan/basics.dotnet/tree/main#controller)
+  - [X] [Creating Controller](https://github.com/furkan-ozkan/basics.dotnet/tree/main#creating-controller)
+  - [X] [Http Requests](https://github.com/furkan-ozkan/basics.dotnet/tree/main#http-requests)
+    - [X] [HttpGet](https://github.com/furkan-ozkan/basics.dotnet/tree/main#httpget)
+      - [X] [GetAll](https://github.com/furkan-ozkan/basics.dotnet/tree/main#getall)
+      - [X] [GetById](https://github.com/furkan-ozkan/basics.dotnet/tree/main#getbyid)
+    - [X] [HttpPost](https://github.com/furkan-ozkan/basics.dotnet/tree/main#httppost)
+      - [X] [Create](https://github.com/furkan-ozkan/basics.dotnet/tree/main#create)
+    - [X] [HttpPut](https://github.com/furkan-ozkan/basics.dotnet/tree/main#httpput)
+      - [X] [Update](https://github.com/furkan-ozkan/basics.dotnet/tree/main#update)
+    - [X] [HttpDelete](https://github.com/furkan-ozkan/basics.dotnet/tree/main#httpdelete)
+      - [X] [Delete](https://github.com/furkan-ozkan/basics.dotnet/tree/main#delete)
 ## Summary
 This project is developed for learning .Net and backend with Entity Framework. Used "Code First" approch here.<br />
 Project basicly creating a Postgresql database and tables, after that using basic CRUD (Get, Post, Put, Delete) operations.<br />
