@@ -180,7 +180,7 @@ Now we will write our http request functions. Lets get in our controller.
 * Use ```ToUserFromCreateDTO();``` and create a user.
 * with context add it in to list and save.
 * Finally find it and return. <br />
-  ![]()
+  ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/httppost.png)
 <br />
 
 #### [HTTPPut]
@@ -189,12 +189,12 @@ Now we will write our http request functions. Lets get in our controller.
 * Parameters will be ```[FromRoute] int id``` and ```[FromBody] UpdateUserRequestDto userDto```
 * in func. use ```Find``` and find user at that id.
 * Use update mapper, save changes and retur. <br />
-  ![]()
+  ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/httpput.png)
 <br />
 
 #### [HTTPDelete]
 ##### Delete
 * attributes ```[HttpDelete]``` ,```[HttpRoute]```
 * Find user from route and remove it users list under context <br />
-  ![]()
+  ![](https://raw.githubusercontent.com/furkan-ozkan/basics.dotnet/main/ReadmeImages/httpdelete.png)
 <br />
